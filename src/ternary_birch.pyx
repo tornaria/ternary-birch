@@ -127,15 +127,15 @@ cdef class BirchGenus:
     cdef shared_ptr[Genus[Z64]] Z64_genus
     cdef EigenvectorManager[Z] Z_manager
     cdef EigenvectorManager[Z64] Z64_manager
-    cpdef Z64_genus_is_set
-    cpdef level_
-    cpdef ramified_primes_
-    cpdef facs
-    cpdef dims
-    cpdef seed_
-    cpdef hecke
-    cpdef sage_hecke
-    cpdef eigenvectors
+    cdef Z64_genus_is_set
+    cdef level_
+    cdef ramified_primes_
+    cdef facs
+    cdef dims
+    cdef seed_
+    cdef hecke
+    cdef sage_hecke
+    cdef eigenvectors
 
     def __init__(self, level, ramified_primes=None, seed=None):
         """
@@ -848,7 +848,7 @@ cdef class _MatrixWrapper:
     cdef vector[int] vec
     cdef Py_ssize_t shape[2]
     cdef Py_ssize_t strides[2]
-    cpdef dim
+    cdef dim
 
     def __init__(self, dim=0):
         self.dim = dim
@@ -879,7 +879,7 @@ cdef class _ArrayWrapper:
     cdef vector[int] vec
     cdef Py_ssize_t shape[1]
     cdef Py_ssize_t strides[1]
-    cpdef dim
+    cdef dim
 
     def __init__(self, dim=0):
         self.dim = dim
