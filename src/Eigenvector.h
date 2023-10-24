@@ -117,7 +117,7 @@ public:
         // a set covering problem to find a subset of coordinates with nonzero
         // values, and use multiple genus representatives.
 
-        size_t num_words = (this->dimension + 63) / 64;
+        //size_t num_words = (this->dimension + 63) / 64;
         std::vector<std::vector<W64>> covers;
         covers.reserve(this->size());
 
