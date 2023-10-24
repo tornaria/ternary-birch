@@ -28,6 +28,7 @@ from random import randint
 from cython.operator import dereference as deref
 from cython.operator import postincrement as incr
 
+cimport sage.categories.map
 from sage.rings.integer cimport Integer
 from sage.libs.gmp.types cimport mpz_t
 
